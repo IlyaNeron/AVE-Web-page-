@@ -53,14 +53,15 @@ gulp.task("minifyCss", ["compileSass"], function() {
 gulp.task('watchFiles', function() {
   gulp.watch('assets/css/**/*.scss', ['compileSass']);
   gulp.watch('assets/js/*.js', ['concatScripts']);
+  gulp.watch('assets/css/**/*.css');
 })
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
+    proxy: "http://AVE:8888",
+    open: "external",
+    notify: "false"
+});
 });
 
 gulp.task('clean', function() {
@@ -88,7 +89,7 @@ gulp.task('serve', ['watchFiles'], function(){
     });
 
     gulp.watch("assets/css/**/*.scss", ['watchFiles']);
-    gulp.watch(['*.html', '*.php']).on('change', browserSync.reload);
+    gulp.watch(['shop.html', 'index.html', '*.php', 'assets/css/*.css']).on('change', browserSync.reload);
 });
 
 gulp.task("default", ["clean", 'build'], function() {
