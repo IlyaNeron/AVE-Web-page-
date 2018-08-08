@@ -4,15 +4,206 @@
   box-sizing: border-box;
   outline: none;
 }
+
 html {
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
 $transition: all 0.3s ease;
+
 body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
 }
-.img-full {
-  width: 100%;
-  height: auto;
+
+.container-lg {
+  max-width:1770px;
+}
+
+.header {
+  background: #333;
+  &-top {
+    padding:13px 0;
+  }
+
+  &-select-block {
+    & span {
+      color: #777777;
+    }
+    & select {
+      background: #333;
+      color: #777777;
+      width: 50px;
+      border: none;
+      background: url('../img/arrow.png') no-repeat right 5px center;
+     }
+  }
+
+  &-user-panel {
+    &-log {
+      padding: 0 80px;
+      & ul {
+        & li {
+          & a {
+            padding: 0 15px;
+            color: #999;
+          }
+        }
+      }
+    }
+    &-basket {
+        margin: -13px 0;
+      &-drop-button {
+        padding: 0;
+        line-height: inherit;
+        border-radius: 0;
+        background: #00c8c8;
+        height:100%;
+        & .drop-button {
+          background: none;
+          border-radius: 0;
+          border: none;
+          padding: 10px 43px 10px 60px;
+          font-size: 13px;
+          position: relative;
+          &::before {
+            position: absolute;
+            content: '';
+            left: 20px;
+            background: url('../img/basket-icon.png') no-repeat;
+            width: 20px;
+            height: 20px;
+          }
+          &::after {
+            content: '';
+            border: none;
+            position: absolute;
+            right: 20px;
+            background: url('../img/arrow.png') no-repeat;
+            width: 10px;
+            height: 10px;
+            top: 55%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+  &-bottom {
+    background: #f8f8f8;
+    padding: 35px 0px;
+    &-nav-menu {
+      &-item {
+        padding: 0 30px;
+        &-main-link {
+          color:#303030;
+          font-weight:bold;
+          text-transform: uppercase;
+          position: relative;
+          padding:5px 0px 20px 0px;
+          border-radius: 0;
+          background: transparent;
+          &::after {
+            border:none;
+            content: '';
+            position: absolute;
+            background: url('../img/arrow.png') no-repeat;
+            width:10px;
+            height:10px;
+            left:0;
+            bottom:0;
+            margin:0;
+          }
+        }
+        &-drop {
+          border-radius: 0;
+          padding:30px;
+          top:20px !important;
+          box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.14);
+          &-1 {
+            width:45%;
+            & h3 {
+              text-transform: uppercase;
+              font-size: 12px;
+              color:#575153;
+              font-weight:bold;
+              margin-bottom:30px;
+            }
+            & ul {
+              & li {
+                &:not(:last-child) {
+                padding:0 0 10px 0;
+              }
+                & a {
+                  font-size: 14px;
+                  color:#727272;
+                  display: block;
+                  font-weight:300;
+                }
+              }
+            }
+          }
+          &-banner {
+            background: #333;
+            width:100%;
+            padding:60px 0;
+            & span {
+              font-size: 36px;
+              color:#fff;
+              display: block;
+              text-align: center;
+              text-transform: uppercase;
+            }
+            & span:first-child {
+              font-weight:bold;
+            }
+          }
+          &-wrapper {
+            padding: 0 0 60px 0;
+          }
+        }
+        &-main-link-static::after {
+          display: none;
+        }
+      }
+      &-search {
+        align-items: flex-start;
+        position: relative;
+        & input {
+          border-radius: 0;
+          padding:4.5px 35px 4.5px 10px;
+          position: relative;
+          width:190px;
+          font-weight:300;
+          border:1px solid #e7e7e7;
+          color:#989898;
+          font-size:13px;
+        }
+        & button {
+          background: url('../img/search-icon.png') no-repeat center;
+          position: absolute;
+          right:0;
+          top:0;
+          bottom:0;
+          width:30px;
+          height:30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.bg {
+  background-color: rgb(248, 248, 248);
+  box-shadow: 0px 17px 24px 0px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  left: 1010px;
+  top: 138px;
+  width: 467px;
+  height: 527px;
+  z-index: 199;
 }
