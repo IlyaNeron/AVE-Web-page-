@@ -933,52 +933,14 @@
   // $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 
 
-ul {
-  margin-bottom:0 !important;
-  padding:0;
-  list-style: none !important;
-}
 
-a {
- 
-}
-
-.btn {
-  &:focus {
-    box-shadow: none !important;
-  }
-}
-
-select {
-  cursor: pointer;
-}
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-$nav-pills-link-active-bg:transparent;
+$dropdown-min-width: 470px;
+$nav-pills-link-active-bg: transparent;
 $nav-pills-link-active-color: #00c8c8;
-
-.dropdown-menu.show {
-  display: flex !important;
-  flex-direction: column;
-}
-
-$dropdown-min-width:470px;
-
-.show  .header-bottom-nav-menu-item-main-link::after{
-   border:none;
-   content: '';
-   position: absolute;
-   left:0;
-   background: url('../img/active-arrow.png') no-repeat;
-   width:10px;
-   height:10px;
-   bottom:0;
-   margin:0;
-}
-
-
+$input-btn-focus-width: 0;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$border-radius: 0;
+$btn-border-width: 2px;
+$btn-padding-y: 13.5px;
+$btn-padding-x: 50px;

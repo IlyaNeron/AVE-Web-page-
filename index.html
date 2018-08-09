@@ -19,17 +19,16 @@
         <div class="header-bar">
         <div class="container">
           <div class="header-top d-flex justify-content-between">
-            <div class="header-select-block">
+            <div class="header-valuet-block icon-down-open-mini">
               <span>Currency :</span>
-              <select>
+              <select class="header-valuet-block-select">
                 <option>GBP</option>
                 <option>USD</option>
-                <option>UA</option>
               </select>
             </div>
             <div class="header-user-panel d-flex">
               <div class="header-user-panel-log">
-                <ul class="d-flex">
+                <ul class="d-flex m-0 p-0">
                   <li>
                     <a href="#">Register</a>
                   </li>
@@ -40,13 +39,13 @@
               </div>
               <div class="header-user-panel-basket">
                 <div class="btn-group header-user-panel-basket-drop-button">
-                  <button type="button" class="btn btn-danger dropdown-toggle drop-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">empty</button>
+                  <button type="button" class="btn dropdown-toggle drop-button icon-basket icon-down-open-mini" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon-down-open-mini"></span>empty</button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Another action</a>
+                    <a href="#" class="dropdown-item">Something else here</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
+                    <a href="#" class="dropdown-item">Separated link</a>
                   </div>
                 </div>
               </div>
@@ -55,14 +54,14 @@
       </div>
     </div>
       <div class="header-bottom">
-      <div class="container container-lg d-flex justify-content-between">
+      <div class="container container-lg d-flex justify-content-between align-items-center">
           <div class="logo">
-            <img alt="" width="" height="" src="assets/img/logo.png">
+            <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
           </div>
           <div class="header-bottom-nav-menu d-flex">
             <ul class="nav nav-pills">
               <li class="nav-item header-bottom-nav-menu-item">
-                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">mens</a>
+                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link icon-down-open-mini" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">mens</a>
                 <div class="dropdown-menu header-bottom-nav-menu-item-drop">
                   <div class="header-bottom-nav-menu-item-drop-wrapper d-flex justify-content-between">
                   <div class="header-bottom-nav-menu-item-drop-1">
@@ -113,7 +112,7 @@
                 </div>
               </li>
               <li class="nav-item dropdown header-bottom-nav-menu-item">
-                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">womens</a>
+                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link icon-down-open-mini" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">womens</a>
                 <div class="dropdown-menu header-bottom-nav-menu-item-drop">
                   <div class="header-bottom-nav-menu-item-drop-wrapper d-flex justify-content-between">
                   <div class="header-bottom-nav-menu-item-drop-1">
@@ -167,7 +166,7 @@
                 <a href="#" class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link header-bottom-nav-menu-item-main-link-static">the brand</a>
               </li>
               <li class="nav-item header-bottom-nav-menu-item">
-                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">local stores</a>
+                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link icon-down-open-mini" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">local stores</a>
                 <div class="dropdown-menu header-bottom-nav-menu-item-drop">
                   <div class="header-bottom-nav-menu-item-drop-wrapper d-flex justify-content-between">
                   <div class="header-bottom-nav-menu-item-drop-1">
@@ -218,7 +217,7 @@
                 </div>
               </li>
               <li class="nav-item header-bottom-nav-menu-item">
-                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">local book</a>
+                <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link icon-down-open-mini" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">local book</a>
                 <div class="dropdown-menu header-bottom-nav-menu-item-drop">
                   <div class="header-bottom-nav-menu-item-drop-wrapper d-flex justify-content-between">
                   <div class="header-bottom-nav-menu-item-drop-1">
@@ -269,14 +268,210 @@
                 </div>
               </li>
             </ul>
-             <div class="header-bottom-nav-menu-search d-flex">
+             <form class="header-bottom-nav-menu-search d-flex">
                <input type="search" class="form-control" placeholder="Search..">
-               <button class="btn"></button> 
-             </div>
+               <button class="btn icon-search"></button> 
+             </form>
           </div>
         </div>
       </div>
       </header>
+      <main class="main">
+        <section class="banner-section" style="background-image: url('assets/img/main-section-image.png');">
+          <div class="container container-lg">
+            <h1>A V E</h1>
+            <button type="button" class="btn btn-outline-primary">shop men's collection</button>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container container-lg">
+            <div class="tabs-catalog">
+              <ul class="nav nav-pills mb-3 tabs-catalog-items" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-home" aria-selected="true">popular</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-arrivals" role="tab" aria-controls="pills-profile" aria-selected="false">new arrivals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-sellers" role="tab" aria-controls="pills-contact" aria-selected="false">best sellers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-offers" role="tab" aria-controls="pills-contact" aria-selected="false">special offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-soon" role="tab" aria-controls="pills-contact" aria-selected="false">coming soon</a>
+                </li>
+              </ul>
+              <div class="tab-content tabs-catalog-content" id="pills-tabContent">
+                <div class="tab-pane fade show active row" id="pills-popular" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6 m-0 row">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_1">
+                      <div class="tabs-catalog-content-block-1-item-price">
+                         <span class="">89.99</span>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="wrapper carousel-item active">
+                      <div class="tabs-catalog-content-block-1-item-image">
+                        <img alt="" width="" height="" src="assets/img/tabs-catalog-image_1.png">
+                      </div>
+                    </div>
+                    <div class="wrapper carousel-item">
+                      <div class="tabs-catalog-content-block-1-item-image">
+                        <img alt="" width="" height="" src="assets/img/tabs-catalog-image_2.jpg">
+                      </div>
+                    </div>
+                    </div>
+                      <div class="tabs-catalog-content-block-1-item-description text-center">
+                        <a href="#">womens burnt orange casual tee <span class="tabs-catalog-content-block-1-item-description-price">29.95</span></a>
+                        <p class="m-0">Classic casual t-shirt for women on the move.</p>
+                        <p class="m-0">100% cotton.</p>
+                        <div class="tabs-catalog-content-block-1-item-description-user-buttons">
+                          <ul class="d-flex justify-content-center">
+                            <li>
+                              <a href="#">
+                                <img alt="" width="100%" height="100%" src="assets/img/user-button_1.png">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img alt="" width="100%" height="100%" src="assets/img/user-button_2.png">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img alt="" width="100%" height="100%" src="assets/img/user-button_3.png">
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <ol class="carousel-indicators tabs-catalog-content-block-1-item-radio-buttons">
+                         <li data-target="#carouselExampleIndicators_1" data-slide-to="0" class="active btn radio-buttons-item">
+                            <img alt=""  src="assets/img/tabs-catalog-image_1.png">
+                         </li>
+                         <li data-target="#carouselExampleIndicators_1" data-slide-to="1" class="btn radio-buttons-item">
+                            <img alt=""  src="assets/img/tabs-catalog-image_2.png">
+                         </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_2">
+                      <div class="tabs-catalog-content-block-1-item-price">
+                         <span class="">47.50</span>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="wrapper carousel-item active">
+                      <div class="tabs-catalog-content-block-1-item-image ">
+                        <img alt="" width="100%" height="100%" src="assets/img/tabs-catalog-image_3.png">
+                      </div>
+                    </div>
+                    <div class="wrapper carousel-item">
+                      <div class="tabs-catalog-content-block-1-item-image">
+                        <img alt="" width="100%" height="100%" src="assets/img/tabs-catalog-image_4.jpg">
+                      </div>
+                    </div>
+                    </div>
+                      <div class="tabs-catalog-content-block-1-item-description text-center">
+                        <a href="#">womens burnt orange casual tee <span class="tabs-catalog-content-block-1-item-description-price">29.95</span></a>
+                        <p class="m-0">Classic casual t-shirt for women on the move.</p>
+                        <p class="m-0">100% cotton.</p>
+                        <div class="tabs-catalog-content-block-1-item-description-user-buttons">
+                          <ul class="d-flex justify-content-center">
+                            <li>
+                              <a href="#">
+                                <img alt="" width="" height="" src="assets/img/user-button_1.png">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img alt="" width="" height="" src="assets/img/user-button_2.png">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img alt="" width="" height="" src="assets/img/user-button_3.png">
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <ol class="carousel-indicators tabs-catalog-content-block-1-item-radio-buttons">
+                         <li data-target="#carouselExampleIndicators_2" data-slide-to="0" class="active btn radio-buttons-item">
+                            <img alt=""  src="assets/img/tabs-catalog-image_3.png">
+                         </li>
+                         <li data-target="#carouselExampleIndicators_2" data-slide-to="1" class="btn radio-buttons-item">
+                            <img alt=""  src="assets/img/tabs-catalog-image_4.jpg">
+                         </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_3">
+                      <div class="tabs-catalog-content-block-1-item-price">
+                         <span class="">69.95</span>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="wrapper carousel-item active">
+                      <div class="tabs-catalog-content-block-1-item-image ">
+                        <img alt="" width="100%" height="100%" src="assets/img/tabs-catalog-image_5.png">
+                      </div>
+                    </div>
+                    <div class="wrapper carousel-item">
+                      <div class="tabs-catalog-content-block-1-item-image">
+                        <img alt="" width="100%" height="100%" src="assets/img/tabs-catalog-image_6.jpg">
+                      </div>
+                    </div>
+                    </div>
+                      <div class="tabs-catalog-content-block-1-item-description text-center">
+                        <a href="#">womens burnt orange casual tee <span class="tabs-catalog-content-block-1-item-description-price">29.95</span></a>
+                        <p class="m-0">Classic casual t-shirt for women on the move.</p>
+                        <p class="m-0">100% cotton.</p>
+                        <div class="tabs-catalog-content-block-1-item-description-user-buttons">
+                          <ul class="d-flex justify-content-center">
+                            <li>
+                              <a href="#">
+                                <img alt="" width="" height="" src="assets/img/user-button_1.png">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img alt="" width="" height="" src="assets/img/user-button_2.png">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <img alt="" width="" height="" src="assets/img/user-button_3.png">
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <ol class="carousel-indicators tabs-catalog-content-block-1-item-radio-buttons">
+                         <li data-target="#carouselExampleIndicators_3" data-slide-to="0" class="active btn radio-buttons-item">
+                            <img alt=""  src="assets/img/tabs-catalog-image_5.png">
+                         </li>
+                         <li data-target="#carouselExampleIndicators_3" data-slide-to="1" class="btn radio-buttons-item">
+                            <img alt=""  src="assets/img/tabs-catalog-image_6.jpg">
+                         </li>
+                      </ol>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-arrivals" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="pills-sellers" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                <div class="tab-pane fade" id="pills-offers" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                <div class="tab-pane fade" id="pills-soon" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
     <script src="assets/js/main.js"></script>
   </body>

@@ -1,0 +1,11 @@
+.btn-outline-primary {
+  color: #454647;
+  border-color: #737373;
+  font-size:16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:hover {
+    background: #00c8c8;
+    border-color:#00c8c8;
+  }
+}
