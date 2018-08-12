@@ -1,6 +1,7 @@
 .tabs-catalog {
-  padding: 65px 0;
+  padding: 60px 0;
   border-top:1px solid #eee;
+  border-bottom: 1px solid #eee;
 
   &-items {
 
@@ -29,8 +30,17 @@
         &-image {
           width:100%;
           position: relative;
+          padding-top: 126%;
+
           & img {
-            width:100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            height: 100%;
+          }
+          &-bg {
+            padding-top:85%;
           }
         }
         &-price {
@@ -40,27 +50,70 @@
             padding:15px;
             z-index:1;
             & span {
-            padding-left:5px;
-            font-size:21px;
-            color:#9a9a9a;
-            font-weight:300;
-          }
+            padding-left: 9px;
+            font-size: 21px;
+            color :#9a9a9a;
+            position: relative;
+            font-weight: 300;
             &::before {
               content: '£';
               font-size:10px;
+              left:0;
               position: absolute;
-              top:45%;
+              top:35%;
               transform: translateY(-50%);
               color:#9a9a9a;
             }
           }
+          .old-price {
+            padding-right:10px;
+            &::after {
+              content: '';
+              background-color: #9a9a9a;
+              width:90%;
+              height:1px;
+              position: absolute;
+              top:50%;
+              left:0;
+            }
+          }
+          }
+          &-info {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translateY(-50%) translateX(-50%);
+            z-index:7;
+            visibility: hidden;
+            opacity: 0;
+            transition:all 0.3s;
+            & a {
+              font-size:48px;
+              color:#fff;
+              text-decoration: none;
+              transition: all 0.3s;
+               &:hover {
+              color: #00c8c8;
+            }
+            }
+          }
+          &:hover &-info {
+            visibility: visible;
+            opacity:1;
+          }
           &:hover {
               box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+          }
+          &:hover &-radio-buttons {
+            opacity: 1;
+            visibility: visible;
           }
            &:hover  &-description {
                 opacity: 1;
                 box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
                 visibility: visible;
+                z-index:10;
+        
           }
           &-description {
             transition:all 0.5s;
@@ -71,13 +124,19 @@
             right: 0;
             left: 0;
             background-color: #fff;
-            z-index:2;
+            z-index:3;
             top: 100%;
             & a {
               text-transform: uppercase;
-              font-size: 13px;
+              font-size: 18px;
               color:#727272;
               font-weight:bold;
+              display: block;
+              text-decoration: none;
+              transition: all 0.3s;
+              &:hover {
+                color: #00c8c8;
+              }
             }
             & p {
               font-size: 15px;
@@ -95,12 +154,15 @@
                     background: #727272;
                     display: block;
                     width:30px;
+                    text-decoration: none;
                     height:30px;
                     border-radius: 50%;
-                    padding:4px;
+                    padding:2px;
                     transition: 0.5s all;
+                    color: #fff;
                     &:hover {
                       background: #00c8c8;
+                      color: #fff;
                     }
                   }
                 }
@@ -124,6 +186,10 @@
             top:0;
             bottom: inherit;
             margin:15px;
+            z-index: 5;
+            visibility: hidden;
+            transition: all 0.3s;
+            opacity: 0;
             & li {
               transition: 0.3s all;
               width:80px;
@@ -152,3 +218,4 @@
     }
   }
 }
+

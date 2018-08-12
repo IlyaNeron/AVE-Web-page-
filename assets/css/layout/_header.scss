@@ -31,7 +31,7 @@
 
   &-user-panel {
     &-log {
-      padding: 0 80px;
+      padding: 0 80px 0 0;
       & ul {
         list-style: none;
         & li {
@@ -153,21 +153,6 @@
               }
             }
           }
-          &-banner {
-            background: #333;
-            width:100%;
-            padding:60px 15px;
-            & span {
-              font-size: 36px;
-              color:#fff;
-              display: block;
-              text-align: center;
-              text-transform: uppercase;
-            }
-            & span:first-child {
-              font-weight:bold;
-            }
-          }
           &-wrapper {
             padding: 0 0 60px 0;
           }
@@ -214,5 +199,11 @@
       display: flex !important;
       flex-direction: column;
     }
+  }
+}
+
+@media (max-width: 1140px) {
+  .header-bottom-nav-menu-item {
+    padding:0 15px;
   }
 }
