@@ -1,34 +1,48 @@
+.tabs-section {
+  padding: 60px 0 0px 0;
+}
+
 .tabs-catalog {
-  padding: 60px 0 50px 0;
-  border-top:1px solid #eee;
+  border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
+  padding:50px 0 45px 0;
 
   &-items {
 
     & li {
-      padding:5px 25px;
+      padding: 5px 25px;
 
       &:first-child {
-        padding:5px 25px 5px 0;
+        padding: 5px 25px 5px 0;
       }
 
       & a {
         color:#727272;
         text-transform: uppercase;
-        font-weight:700;
+        font-weight: 700;
+        transition: color 0.3s linear;
+
+        &:hover {
+          color: #00c8c8;
+        }
+
       }
 
     }
 
   }
+  
   &-content {
+
     &-block-1 {
+
       &-item {
         position: relative;
-        cursor:pointer;
-        transition:0.5s all;
+        cursor: pointer;
+        transition: 0.3s opacity linear, 0.3s box-shadow linear, 0.3s color linear, 0.3s background-color linear;
+
         &-image {
-          width:100%;
+          width: 100%;
           position: relative;
           padding-top: 126%;
 
@@ -39,84 +53,103 @@
             top: 0;
             height: 100%;
           }
+
           &-bg {
-            padding-top:85%;
+            padding-top: 85%;
           }
+
         }
+
         &-price {
             position: absolute;
-            left:0;
-            top:0;
-            padding:15px;
-            z-index:1;
+            left: 0;
+            top: 0;
+            padding: 15px;
+            z-index: 1;
+
             & span {
             padding-left: 9px;
             font-size: 21px;
             color :#9a9a9a;
             position: relative;
             font-weight: 300;
+
             &::before {
               content: '£';
-              font-size:10px;
-              left:0;
+              font-size: 10px;
+              left: 0;
               position: absolute;
-              top:35%;
+              top: 35%;
               transform: translateY(-50%);
-              color:#9a9a9a;
+              color: #9a9a9a;
             }
+
           }
+
           .old-price {
-            padding-right:10px;
+            padding-right: 10px;
+
             &::after {
               content: '';
               background-color: #9a9a9a;
-              width:90%;
-              height:1px;
+              width: 90%;
+              height: 1px;
               position: absolute;
-              top:50%;
-              left:0;
+              top: 50%;
+              left: 0;
             }
+
           }
+
           }
+
           &-info {
             position: absolute;
-            top:50%;
-            left:50%;
+            top: 50%;
+            left: 50%;
             transform: translateY(-50%) translateX(-50%);
-            z-index:7;
+            z-index: 7;
             visibility: hidden;
             opacity: 0;
-            transition:all 0.3s;
+            transition: color 0.3s linear;
+
             & a {
-              font-size:48px;
-              color:#fff;
+              font-size: 48px;
+              color: #fff;
               text-decoration: none;
-              transition: all 0.3s;
+              transition: color 0.3s linear;
+
                &:hover {
               color: #00c8c8;
             }
+
             }
+
           }
+
           &:hover &-info {
             visibility: visible;
-            opacity:1;
+            opacity: 1;
           }
+
           &:hover {
               box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
           }
+
           &:hover &-radio-buttons {
             opacity: 1;
             visibility: visible;
           }
+
            &:hover  &-description {
                 opacity: 1;
                 box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
                 visibility: visible;
-                z-index:10;
-        
+                z-index: 10;
           }
+
           &-description {
-            transition:all 0.5s;
+            transition: all 0.5s;
             opacity: 0;
             padding: 20px 15px 15px 15px;
             position: absolute;
@@ -124,79 +157,100 @@
             right: 0;
             left: 0;
             background-color: #fff;
-            z-index:3;
+            z-index: 3;
             top: 100%;
+
             & a {
               text-transform: uppercase;
               font-size: 18px;
-              color:#727272;
-              font-weight:bold;
+              color: #727272;
+              font-weight: bold;
               display: block;
               text-decoration: none;
-              transition: all 0.3s;
+              transition: color 0.3s linear;
+
               &:hover {
                 color: #00c8c8;
               }
+
             }
+
             & p {
               font-size: 15px;
-              color:#8e8c8c;
+              color: #8e8c8c;
             }
+
             &-user-buttons {
-              padding:15px 0 0 0;
+              padding: 15px 0 0 0;
+
               & ul {
-                margin:0;
-                padding:0;
+                margin: 0;
+                padding: 0;
                 list-style: none;
+
                 & li {
-                  padding:5px 7.5px;
+                  padding: 5px 7.5px;
+
                   & a {
                     background: #727272;
                     display: block;
-                    width:30px;
+                    width: 30px;
                     text-decoration: none;
-                    height:30px;
+                    height: 30px;
                     border-radius: 50%;
-                    padding:2px;
-                    transition: 0.5s all;
+                    padding: 2px;
+                    transition: 0.3s background-color linear;
                     color: #fff;
+
                     &:hover {
                       background: #00c8c8;
                       color: #fff;
                     }
+
                   }
+
                 }
+
               }
+
             }
+
             &-price {
               position: relative;
-              padding-left:8px;
+              padding-left: 8px;
+
                   &::before {
                 content: '£';
                 position: absolute;
-                left:0;
-                top:-2px;
+                left: 0;
+                top: -2px;
                 font-size: 10px;
               }
+
             }
+
           }
+
           &-radio-buttons {
             flex-direction: column;
             left: inherit;
-            top:0;
+            top: 0;
             bottom: inherit;
-            margin:15px;
+            margin: 15px;
             z-index: 5;
             visibility: hidden;
             transition: all 0.3s;
             opacity: 0;
+
             & li {
               transition: 0.3s all;
-              width:80px;
-              height:100px;
+              width: 80px;
+              height: 100px;
+
               &:not(:last-child) {
               margin-bottom: 15px;
             }
+
               & img {
                 position: absolute;
                 width: 100%;
@@ -206,16 +260,23 @@
                 left: 0;
                 background-color: #f8f8f8;
               }
+
               &:hover {
                 opacity: 0.5;
               }
+
             }
+
           }
+
           &-wrapper {
             padding: 15px;
           }
+          
       }
-    }
-  }
-}
 
+    }
+
+  }
+
+}
