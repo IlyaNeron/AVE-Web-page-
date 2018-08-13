@@ -89,7 +89,7 @@ gulp.task('serve', ['watchFiles'], function(){
     });
 
     gulp.watch("assets/css/**/*.scss", ['watchFiles']);
-    gulp.watch(['shop.html', 'index.html', '*.php', 'assets/css/*.css']).on('change', browserSync.reload);
+    gulp.watch(['brand.html', 'index.html', '*.php', 'assets/css/*.css']).on('change', browserSync.reload);
 });
 
 gulp.task("default", ["clean", 'build'], function() {
