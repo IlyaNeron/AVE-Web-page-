@@ -1,0 +1,72 @@
+.log-form-section {
+  padding: 45px 0;
+
+  .sign-form-block {
+    padding: 15px 30px;
+
+    &:not(:first-child) {
+    border-left: 1px solid #eee;
+  }
+
+    & h3 {
+      font-size: 18px;
+      color: #575153;
+      margin-bottom: 40px;
+    }
+
+    &-item:not(:last-child) {
+      padding-bottom: 30px;
+    }
+
+    &-item {
+
+      &-control {
+        font-size: 15px;
+        color: #989898;
+        font-weight: 300;
+        padding: 8px 10px;
+      }
+
+    }
+
+    &-bottom {
+
+      & button {
+        padding: 16px 38px;
+      }
+
+      & a {
+        color: #33d3d3;
+        font-size: 15px;
+        font-family: 'roboto';
+      }
+
+    }
+
+    &-check {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #e7e7e7;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    &-user-item {
+      padding-bottom: 30px;
+    }
+
+  }
+
+  .reg-form-block {
+
+    &-bottom {
+
+      & span {
+        padding-left: 60px;
+      }
+
+    }
+
+  }
+
+}

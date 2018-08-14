@@ -2,6 +2,11 @@
   padding: 60px 0 125px;
 
   .local-stores-blocks-item {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     & h3 {
       font-size: 18px;
       text-transform: uppercase;
@@ -70,6 +75,73 @@
         color: #8e8c8c;
         margin-bottom: 30px;
       }
+
+      & ul {
+        list-style: none;
+      }
+
+      &-info {
+
+        & li {
+          padding:10px 0;
+
+          &:last-child {
+            padding: 10px 0 0 0;
+          }
+
+          &:first-child {
+            padding: 0 0 10px 0;
+          }
+
+          & a {
+            font-size: 14px;
+            color: #8e8c8c;
+            font-weight: 300;
+            text-decoration: none;
+            transition: 0.3s color linear;
+
+            &:hover {
+              color: #00c8c8;
+            }
+
+            &:before {
+              margin-right: 10px;
+            }
+
+          }
+
+        }
+
+      }
+
+      &-soc-icons {
+        padding: 60px 0 0 0;
+
+        & li {
+          padding: 0 15px 0 0;
+
+          & a {
+            color: #fff;
+            display: block;
+            border-radius: 50%;
+            background-color: #727272;
+            font-size: 18px;
+            width:25px;
+            height:25px;
+            text-decoration: none;
+            transition: color 0.3s linear, background-color 0.3s linear;
+
+          &:hover {
+            background-color: transparent;
+            color: #00c8c8;
+            }
+
+          }
+
+        }
+
+      }
+
     }
 
   }

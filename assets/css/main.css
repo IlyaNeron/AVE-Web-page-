@@ -9215,8 +9215,8 @@ html {
 /* Base Styles -------------------- */
 @font-face {
   font-family: 'fontello';
-  src: url("fonts/fontello.eot?97650059");
-  src: url("fonts/fontello.eot?97650059#iefix") format("embedded-opentype"), url("fonts/fontello.woff2?97650059") format("woff2"), url("fonts/fontello.woff?97650059") format("woff"), url("fonts/fontello.ttf?97650059") format("truetype"), url("fonts/fontello.svg?97650059#fontello") format("svg");
+  src: url("fonts/fontello.eot?24808027");
+  src: url("fonts/fontello.eot?24808027#iefix") format("embedded-opentype"), url("fonts/fontello.woff2?24808027") format("woff2"), url("fonts/fontello.woff?24808027") format("woff"), url("fonts/fontello.ttf?24808027") format("truetype"), url("fonts/fontello.svg?24808027#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -9607,6 +9607,7 @@ html {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
         top: 0;
+        width: 100%;
         height: 100%; }
       .tabs-catalog-content-block-1-item-image-bg {
         padding-top: 85%; }
@@ -9887,25 +9888,37 @@ html {
 
 .local-stores-content-section {
   padding: 60px 0 125px; }
-  .local-stores-content-section .local-stores-blocks-item h3 {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #575153;
-    margin-bottom: 30px;
-    font-weight: 700; }
-  .local-stores-content-section .local-stores-blocks-item span {
-    color: #727272;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    display: block;
-    font-family: 'roboto'; }
-  .local-stores-content-section .local-stores-blocks-item p {
-    font-size: 15px;
-    color: #8e8c8c;
-    font-family: 'roboto';
-    margin-bottom: 30px; }
-  .local-stores-content-section .local-stores-blocks-item .content-block-item-button button {
-    padding: 20px 47px; }
+  .local-stores-content-section .local-stores-blocks-item {
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .local-stores-content-section .local-stores-blocks-item h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #575153;
+      margin-bottom: 30px;
+      font-weight: 700; }
+    .local-stores-content-section .local-stores-blocks-item span {
+      color: #727272;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      display: block;
+      font-family: 'roboto'; }
+    .local-stores-content-section .local-stores-blocks-item p {
+      font-size: 15px;
+      color: #8e8c8c;
+      font-family: 'roboto';
+      margin-bottom: 30px; }
+    .local-stores-content-section .local-stores-blocks-item .content-block-item-button button {
+      padding: 20px 47px; }
   .local-stores-content-section .local-stores-address {
     padding: 60px 0 0 0; }
     .local-stores-content-section .local-stores-address-image {
@@ -9930,6 +9943,77 @@ html {
       .local-stores-content-section .local-stores-address-description p {
         color: #8e8c8c;
         margin-bottom: 30px; }
+      .local-stores-content-section .local-stores-address-description ul {
+        list-style: none; }
+      .local-stores-content-section .local-stores-address-description-info li {
+        padding: 10px 0; }
+        .local-stores-content-section .local-stores-address-description-info li:last-child {
+          padding: 10px 0 0 0; }
+        .local-stores-content-section .local-stores-address-description-info li:first-child {
+          padding: 0 0 10px 0; }
+        .local-stores-content-section .local-stores-address-description-info li a {
+          font-size: 14px;
+          color: #8e8c8c;
+          font-weight: 300;
+          text-decoration: none;
+          -webkit-transition: 0.3s color linear;
+          transition: 0.3s color linear; }
+          .local-stores-content-section .local-stores-address-description-info li a:hover {
+            color: #00c8c8; }
+          .local-stores-content-section .local-stores-address-description-info li a:before {
+            margin-right: 10px; }
+      .local-stores-content-section .local-stores-address-description-soc-icons {
+        padding: 60px 0 0 0; }
+        .local-stores-content-section .local-stores-address-description-soc-icons li {
+          padding: 0 15px 0 0; }
+          .local-stores-content-section .local-stores-address-description-soc-icons li a {
+            color: #fff;
+            display: block;
+            border-radius: 50%;
+            background-color: #727272;
+            font-size: 18px;
+            width: 25px;
+            height: 25px;
+            text-decoration: none;
+            -webkit-transition: color 0.3s linear, background-color 0.3s linear;
+            transition: color 0.3s linear, background-color 0.3s linear; }
+            .local-stores-content-section .local-stores-address-description-soc-icons li a:hover {
+              background-color: transparent;
+              color: #00c8c8; }
+
+.log-form-section {
+  padding: 45px 0; }
+  .log-form-section .sign-form-block {
+    padding: 15px 30px; }
+    .log-form-section .sign-form-block:not(:first-child) {
+      border-left: 1px solid #eee; }
+    .log-form-section .sign-form-block h3 {
+      font-size: 18px;
+      color: #575153;
+      margin-bottom: 40px; }
+    .log-form-section .sign-form-block-item:not(:last-child) {
+      padding-bottom: 30px; }
+    .log-form-section .sign-form-block-item-control {
+      font-size: 15px;
+      color: #989898;
+      font-weight: 300;
+      padding: 8px 10px; }
+    .log-form-section .sign-form-block-bottom button {
+      padding: 16px 38px; }
+    .log-form-section .sign-form-block-bottom a {
+      color: #33d3d3;
+      font-size: 15px;
+      font-family: 'roboto'; }
+    .log-form-section .sign-form-block-check {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #e7e7e7;
+      margin-right: 10px;
+      margin-bottom: 0; }
+    .log-form-section .sign-form-block-user-item {
+      padding-bottom: 30px; }
+  .log-form-section .reg-form-block-bottom span {
+    padding-left: 60px; }
 
 *,
 *::before,
@@ -9984,6 +10068,33 @@ body {
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
+[class^="icon-"]:after, [class*=" icon-"]:after {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
 .icon-down-open-mini:before {
   content: '\e800'; }
 
@@ -10004,6 +10115,22 @@ body {
   content: '\e804'; }
 
 /* '' */
+.icon-location:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-phone:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-mail:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-clock:before {
+  content: '\e808'; }
+
+/* '' */
 .icon-twitter:before {
   content: '\f099'; }
 
@@ -10024,8 +10151,27 @@ body {
   content: '\f16d'; }
 
 /* '' */
+.icon-american-sign-language-interpreting:before {
+  content: '\f2a3'; }
+
+/* '' */
+.icon-right:after {
+  content: '\f178'; }
+
+/* '' */
 select {
   cursor: pointer; }
+
+label {
+  cursor: pointer; }
+
+input[type="checkbox"] {
+  display: none;
+  cursor: pointer; }
+
+input[type="checkbox"]:checked + .sign-form-block-check {
+  background-color: #33d3d3;
+  border-color: #33d3d3; }
 
 select {
   -webkit-appearance: none;
@@ -10056,5 +10202,9 @@ select {
       font-weight: 300; }
   .banner-block-caption_2 {
     font-weight: 300; }
+
+.form-control:focus {
+  background-color: #fcf6f7;
+  border-color: #bb5465; }
 
 /*# sourceMappingURL=main.css.map */
