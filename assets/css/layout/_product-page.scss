@@ -1,0 +1,294 @@
+.brand-section-content {
+
+  &-breadcrumb {
+
+    & li {
+      font-size: 30px;
+      text-transform: uppercase;
+
+      & a {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 400;
+      }
+      
+    }
+
+  }
+
+}
+
+.product-viev-section {
+  padding: 60px 0 0px 0;
+
+  .product-viev-carousel {
+
+    &-control {
+      top: 50%;
+      transform: translateY(-50%);
+      bottom: inherit;
+      z-index: 10;
+
+
+      &-icon {
+        background-image: none;
+        font-size: 48px;
+        color: #333;
+        width: 45px;
+        height: 60px;
+
+        &:before {
+          margin: 0;
+        }
+
+        &:hover {
+          background-color: #00c8c8;
+          color: #fff;
+        }
+
+      }
+
+    }
+
+    &-image {
+      width: 100%;
+
+      & img {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  .product-viev-description {
+    padding: 15px;
+
+    & h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    &-head {
+      list-style: none;
+      padding: 15px 0 15px 0;
+
+      & li {
+        padding: 0 15px;
+        position: relative;
+
+        &:before {
+          content: '|';
+          position: absolute;
+          color: #727272;
+          left: 0;
+        }
+
+        &:first-child {
+          padding: 0 15px 0 0;
+
+          &:before {
+            display: none;
+          }
+
+        }
+
+        & span {
+          color: #727272;
+        }
+
+        & a {
+          color: #727272;
+          text-decoration: none;
+          transition: color 0.3s linear;
+          &:hover {
+            color: #00c8c8;
+          }
+
+        }
+
+      }
+
+    }
+
+    &-stars-block {
+
+        & span {
+          padding-left: 10px;
+        }
+
+        & i {
+          color: #ded3aa;
+        }
+
+      }
+
+      &-soc {
+
+        & span {
+          padding-right: 10px;
+        }
+
+        & a {
+
+        }
+
+      }
+
+      &-price {
+        display: flex;
+        position: static;
+        padding: 0 0 30px 0;
+
+        & span {
+          font-size: 30px;
+          padding: 0 10px 0 0;
+        }
+
+        & sup {
+          font-size: 18px;
+        }
+
+      }
+
+      & .old-price {
+        text-decoration: line-through;
+      }
+
+      &-status-block {
+
+        & ul {
+          list-style: none;
+          padding: 0 0 30px 0;
+
+          & li:not(:last-child) {
+            padding: 0 0 15px 0;
+          }
+
+          & li {
+
+            & span {
+              color: #575153;
+            }
+
+            & a {
+              color: #8c8c8c;
+              font-size: 15px;
+              transition: 0.3s color linear;
+              text-decoration: none;
+
+              &:hover {
+                color: #00c8c8;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      &-text {
+
+        & p {
+          font-size: 15px;
+          color: #8e8c8c;
+        }
+
+        & ul {
+          padding: 0 0 0 20px;
+
+          & li {
+            font-size: 15px;
+            color: #969494;
+          }
+
+        }
+
+      }
+
+      &-bottom {
+        padding: 50px 0 35px 0;
+
+        & button {
+
+          &:before {
+            margin-right: 10px;
+            font-size: 18px;
+          }
+
+          &:first-child {
+            width:40%;
+            padding: 13.5px 25px;
+          }
+
+          &:last-child {
+            width:50%;
+            padding: 13.5px 25px;
+          }
+
+        }
+
+        & a {
+          text-transform: uppercase;
+          font-size: 14px;
+          display: block;
+          padding: 30px 0 0 0;
+          color: #454647;
+          text-decoration: none;
+          transition: color 0.3s linear;
+
+          &:hover {
+            color: #00c8c8;
+          }
+
+          &:before {
+            background-color: #727272;
+            border-radius: 50%;
+            width: 30px;
+            padding: 8px;
+            height: 30px;
+            color: #fff;
+            margin-right: 10px;
+          }
+
+        }
+
+      }
+
+      &-select {
+        padding: 30px 0 0 0;
+
+        &-block {
+          padding-right: 30px;
+
+          & label {
+            text-transform: uppercase;
+            color: #575153;
+          }
+
+          & select {
+            padding: 2px 71px 2px 10px;
+            font-size: 13px;
+            background: url('../img/arrow.png') no-repeat right 10px center;
+          }
+
+        }
+
+      }
+
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: ) {
+  
+}

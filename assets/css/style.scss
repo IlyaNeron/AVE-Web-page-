@@ -108,13 +108,16 @@ body {
 .icon-phone:before { content: '\e806'; } /* '' */
 .icon-mail:before { content: '\e807'; } /* '' */
 .icon-clock:before { content: '\e808'; } /* '' */
+.icon-right-open:before { content: '\e809'; } /* '' */
+.icon-left-open:before { content: '\e80a'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-pinterest-circled:before { content: '\f0d2'; } /* '' */
+.icon-gplus:before { content: '\f0d5'; } /* '' */
 .icon-exchange:before { content: '\f0ec'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
-.icon-american-sign-language-interpreting:before { content: '\f2a3'; } /* '' */
 .icon-right:after { content: '\f178'; } /* '' */
+.icon-american-sign-language-interpreting:before { content: '\f2a3'; } /* '' */
 
 select {
   cursor: pointer;
@@ -151,8 +154,8 @@ select {
 
 
 .banner-block {
-  padding:60px 15px;
-  width:100%;
+  padding: 60px 15px;
+  width: 100%;
   background-color: #333;
 
   & span {
@@ -164,10 +167,12 @@ select {
   }
 
   &-caption_1 {
-    font-weight:bold;
+    font-weight: bold;
+
     &:only-child {
       font-weight: 300;
     }
+
   }
 
   &-caption_2 {
@@ -179,4 +184,53 @@ select {
 .form-control:focus {
   background-color: #fcf6f7;
   border-color: #bb5465;
+}
+
+.price-block {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 15px;
+            z-index: 1;
+
+            & span {
+            padding-left: 9px;
+            font-size: 21px;
+            color :#9a9a9a;
+            position: relative;
+            font-weight: 300;
+
+            & sup {
+              font-size: 14px;
+              padding-right: 3px;
+            }
+
+          }
+        }
+
+        .active-link {
+          color: #00c8c8 !important;
+        }
+
+        .nav-link.active,
+  .show > .tab-link {
+    color: #fff !important;
+    background-color: #333 !important;
+  }
+
+
+.product-page-tabs-section {
+
+  .tab-content {
+
+    > .tab-pane {
+      display: none;
+    }
+
+    > .active {
+      display: block;
+    }
+
+  }
+
 }

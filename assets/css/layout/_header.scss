@@ -48,6 +48,12 @@
           & a {
             padding: 0 15px;
             color: #999;
+            text-decoration: none;
+            transition: color 0.3s linear;
+
+            &:hover {
+              color: #00c8c8;
+            }
           }
 
         }
@@ -142,7 +148,7 @@
           }
 
           &::after {
-            display: none;
+            display: none !important;
           }
 
           &::before {

@@ -75,14 +75,9 @@
             position: relative;
             font-weight: 300;
 
-            &::before {
-              content: '£';
-              font-size: 10px;
-              left: 0;
-              position: absolute;
-              top: 35%;
-              transform: translateY(-50%);
-              color: #9a9a9a;
+            & sup {
+              font-size: 14px;
+              padding-right: 3px;
             }
 
           }
