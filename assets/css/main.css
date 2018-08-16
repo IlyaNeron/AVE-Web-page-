@@ -9779,6 +9779,9 @@ html {
     .tabs-catalog-content-block-1-item-wrapper {
       padding: 15px; }
 
+.content-blocks .content-block-wrapper {
+  padding: 15px; }
+
 .content-blocks .content-block-item {
   background: #f8f8f8;
   position: relative;
@@ -9876,6 +9879,8 @@ html {
       color: #8e8c8c;
       font-size: 15px;
       font-family: 'roboto'; }
+  .brand-content-section .brand-content-blocks-item-description-2 {
+    padding: 0 15px 195px 15px; }
   .brand-content-section .brand-content-blocks-item:nth-child(4n) {
     padding: 30px 0 0 0; }
 
@@ -10037,18 +10042,17 @@ html {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     bottom: inherit;
-    z-index: 10; }
-    .product-viev-section .product-viev-carousel-control-icon {
-      background-image: none;
-      font-size: 48px;
-      color: #333;
-      width: 45px;
-      height: 60px; }
-      .product-viev-section .product-viev-carousel-control-icon:before {
-        margin: 0; }
-      .product-viev-section .product-viev-carousel-control-icon:hover {
-        background-color: #00c8c8;
-        color: #fff; }
+    z-index: 10;
+    font-size: 32px;
+    color: #333;
+    width: 45px;
+    height: 60px;
+    opacity: 1; }
+    .product-viev-section .product-viev-carousel-control:before {
+      margin: 0; }
+    .product-viev-section .product-viev-carousel-control:hover {
+      background-color: #00c8c8;
+      color: #fff; }
   .product-viev-section .product-viev-carousel-image {
     width: 100%; }
     .product-viev-section .product-viev-carousel-image img {
@@ -10073,6 +10077,8 @@ html {
           padding: 0 15px 0 0; }
           .product-viev-section .product-viev-description-head li:first-child:before {
             display: none; }
+        .product-viev-section .product-viev-description-head li:last-child {
+          padding: 0 0 0 15px; }
         .product-viev-section .product-viev-description-head li span {
           color: #727272; }
         .product-viev-section .product-viev-description-head li a {
@@ -10082,12 +10088,25 @@ html {
           transition: color 0.3s linear; }
           .product-viev-section .product-viev-description-head li a:hover {
             color: #00c8c8; }
-    .product-viev-section .product-viev-description-stars-block span {
-      padding-left: 10px; }
-    .product-viev-section .product-viev-description-stars-block i {
-      color: #ded3aa; }
+    .product-viev-section .product-viev-description-stars-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .product-viev-section .product-viev-description-stars-block span {
+        padding-left: 10px; }
+      .product-viev-section .product-viev-description-stars-block i {
+        color: #ded3aa;
+        width: 7%; }
     .product-viev-section .product-viev-description-soc span {
-      padding-right: 10px; }
+      padding-right: 5px; }
+    .product-viev-section .product-viev-description-soc a {
+      padding: 0 5px; }
     .product-viev-section .product-viev-description-price {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -10100,7 +10119,15 @@ html {
       .product-viev-section .product-viev-description-price sup {
         font-size: 18px; }
     .product-viev-section .product-viev-description .old-price {
-      text-decoration: line-through; }
+      position: relative; }
+      .product-viev-section .product-viev-description .old-price::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 90%;
+        height: 1px;
+        background-color: #727272; }
     .product-viev-section .product-viev-description-status-block ul {
       list-style: none;
       padding: 0 0 30px 0; }
@@ -10125,7 +10152,7 @@ html {
         font-size: 15px;
         color: #969494; }
     .product-viev-section .product-viev-description-bottom {
-      padding: 50px 0 35px 0; }
+      padding: 35px 0 35px 0; }
       .product-viev-section .product-viev-description-bottom button:before {
         margin-right: 10px;
         font-size: 18px; }
@@ -10190,6 +10217,64 @@ html {
 @media (max-width: 960px) {
   .product-page-tabs-section ul li {
     padding-right: 30px; } }
+
+.lookbook-catalog-content-block-1-item {
+  background-color: #e7e8ea; }
+  .lookbook-catalog-content-block-1-item-image {
+    padding-bottom: 60.5%;
+    position: relative; }
+    .lookbook-catalog-content-block-1-item-image img {
+      position: absolute;
+      top: 0;
+      width: 60%;
+      height: 100%;
+      right: 0; }
+  .lookbook-catalog-content-block-1-item-description {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    padding: 60px 15px; }
+    .lookbook-catalog-content-block-1-item-description h3 {
+      font-size: 48px;
+      text-transform: uppercase;
+      color: #575153;
+      margin-bottom: 20px; }
+    .lookbook-catalog-content-block-1-item-description span {
+      color: #727272;
+      text-transform: uppercase; }
+    .lookbook-catalog-content-block-1-item-description-text {
+      margin-bottom: 20px;
+      display: block; }
+    .lookbook-catalog-content-block-1-item-description p {
+      color: #8e8c8c; }
+      .lookbook-catalog-content-block-1-item-description p:not(:last-child) {
+        margin-bottom: 30px; }
+    .lookbook-catalog-content-block-1-item-description-wrapper {
+      padding-right: 64%; }
+
+.lookbook-catalog-content-block-2 {
+  padding: 30px 0; }
+  .lookbook-catalog-content-block-2-item-image {
+    padding-bottom: 40%; }
+    .lookbook-catalog-content-block-2-item-image img {
+      right: 50%;
+      width: 30%;
+      -webkit-transform: translateX(50%);
+              transform: translateX(50%); }
+  .lookbook-catalog-content-block-2-item-description-wrapper {
+    padding-right: 60%;
+    position: relative; }
+    .lookbook-catalog-content-block-2-item-description-wrapper h2 {
+      position: absolute;
+      right: 15px;
+      top: 0;
+      font-size: 72px;
+      color: #00c8c8;
+      margin: 0; }
+      .lookbook-catalog-content-block-2-item-description-wrapper h2 .win {
+        color: #00c8c8;
+        font-size: 200px;
+        font-weight: bold; }
 
 *,
 *::before,
@@ -10414,8 +10499,8 @@ select {
 .active-link {
   color: #00c8c8 !important; }
 
-.nav-link.active,
-.show > .tab-link {
+.product-page-tabs-section .nav-link.active,
+.product-page-tabs-section .show > .tab-link {
   color: #fff !important;
   background-color: #333 !important; }
 

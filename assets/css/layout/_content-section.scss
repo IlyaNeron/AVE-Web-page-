@@ -1,5 +1,9 @@
 .content-blocks {
 
+  & .content-block-wrapper {
+      padding: 15px;
+    }
+
   .content-block {
 
     &-item {

@@ -30,14 +30,11 @@
       transform: translateY(-50%);
       bottom: inherit;
       z-index: 10;
-
-
-      &-icon {
-        background-image: none;
-        font-size: 48px;
-        color: #333;
-        width: 45px;
-        height: 60px;
+      font-size: 32px;
+      color: #333;
+      width: 45px;
+      height: 60px;
+      opacity: 1;
 
         &:before {
           margin: 0;
@@ -50,7 +47,7 @@
 
       }
 
-    }
+
 
     &-image {
       width: 100%;
@@ -95,6 +92,10 @@
 
         }
 
+         &:last-child {
+            padding: 0 0 0 15px;
+          }
+
         & span {
           color: #727272;
         }
@@ -114,6 +115,9 @@
     }
 
     &-stars-block {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
 
         & span {
           padding-left: 10px;
@@ -121,6 +125,7 @@
 
         & i {
           color: #ded3aa;
+          width: 7%;
         }
 
       }
@@ -128,11 +133,11 @@
       &-soc {
 
         & span {
-          padding-right: 10px;
+          padding-right: 5px;
         }
 
         & a {
-
+          padding: 0 5px;
         }
 
       }
@@ -154,7 +159,17 @@
       }
 
       & .old-price {
-        text-decoration: line-through;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 90%;
+          height: 1px;
+          background-color: #727272;
+        }
       }
 
       &-status-block {
@@ -211,7 +226,7 @@
       }
 
       &-bottom {
-        padding: 50px 0 35px 0;
+        padding: 35px 0 35px 0;
 
         & button {
 
