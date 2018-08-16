@@ -44,11 +44,17 @@
     }
 
     &-check {
-      width: 20px;
-      height: 20px;
-      border: 1px solid #e7e7e7;
-      margin-right: 10px;
-      margin-bottom: 0;
+      display: flex;
+
+        &::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #e7e7e7;
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
     }
 
     &-user-item {

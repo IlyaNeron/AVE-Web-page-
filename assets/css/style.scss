@@ -132,7 +132,7 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + .sign-form-block-check {
+input[type="checkbox"]:checked + .sign-form-block-check:before {
   background-color: #33d3d3;
   border-color: #33d3d3;
 }

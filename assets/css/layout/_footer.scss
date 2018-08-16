@@ -16,7 +16,13 @@
 
       & ul {
         list-style: none;
+
         & li {
+          font-size: 14px;
+          color: #727272;
+          font-weight: 300;
+          text-decoration: none;
+          transition: color 0.3s linear;
 
         &:not(:last-child) {
           padding-bottom: 15px;
@@ -25,7 +31,7 @@
             & a {
               font-size: 14px;
               color: #727272;
-              font-weight: light;
+              font-weight: 300;
               text-decoration: none;
               transition: color 0.3s linear;
 

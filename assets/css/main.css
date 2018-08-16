@@ -9249,8 +9249,9 @@ html {
   padding: 0 80px 0 0; }
   .header-user-panel-log ul {
     list-style: none; }
+    .header-user-panel-log ul li:not(:first-child) {
+      padding: 0 15px; }
     .header-user-panel-log ul li a {
-      padding: 0 15px;
       color: #999;
       text-decoration: none;
       -webkit-transition: color 0.3s linear;
@@ -9417,17 +9418,24 @@ html {
         margin-bottom: 30px; }
       .footer-lists-item ul {
         list-style: none; }
-        .footer-lists-item ul li:not(:last-child) {
-          padding-bottom: 15px; }
-        .footer-lists-item ul li a {
+        .footer-lists-item ul li {
           font-size: 14px;
           color: #727272;
-          font-weight: light;
+          font-weight: 300;
           text-decoration: none;
           -webkit-transition: color 0.3s linear;
           transition: color 0.3s linear; }
-          .footer-lists-item ul li a:hover {
-            color: #00c9c8; }
+          .footer-lists-item ul li:not(:last-child) {
+            padding-bottom: 15px; }
+          .footer-lists-item ul li a {
+            font-size: 14px;
+            color: #727272;
+            font-weight: 300;
+            text-decoration: none;
+            -webkit-transition: color 0.3s linear;
+            transition: color 0.3s linear; }
+            .footer-lists-item ul li a:hover {
+              color: #00c9c8; }
   .footer-bottom {
     padding: 0 0 60px 0; }
     .footer-bottom-social {
@@ -9823,7 +9831,7 @@ html {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
-  padding-bottom: 450px; }
+  padding-bottom: 23.65%; }
   .brand-section::after {
     content: '';
     background-color: #333;
@@ -9902,7 +9910,6 @@ html {
 .local-stores-content-section {
   padding: 60px 0 125px; }
   .local-stores-content-section .local-stores-blocks-item {
-    padding: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9912,14 +9919,15 @@ html {
             flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    padding: 15px 0; }
     .local-stores-content-section .local-stores-blocks-item h3 {
       font-size: 18px;
       text-transform: uppercase;
       color: #575153;
       margin-bottom: 30px;
       font-weight: 700; }
-    .local-stores-content-section .local-stores-blocks-item span {
+    .local-stores-content-section .local-stores-blocks-item address {
       color: #727272;
       text-transform: uppercase;
       padding-bottom: 20px;
@@ -9941,7 +9949,7 @@ html {
         height: 100%; }
     .local-stores-content-section .local-stores-address-description {
       background-color: #f8f8f8;
-      padding: 40px 60px 40px 40px; }
+      padding: 40px 40px 40px 40px; }
       .local-stores-content-section .local-stores-address-description h3 {
         text-transform: uppercase;
         font-weight: bold;
@@ -9954,29 +9962,31 @@ html {
         display: block;
         padding-bottom: 20px; }
       .local-stores-content-section .local-stores-address-description p {
-        color: #8e8c8c;
-        margin-bottom: 30px; }
+        color: #8e8c8c; }
       .local-stores-content-section .local-stores-address-description ul {
         list-style: none; }
-      .local-stores-content-section .local-stores-address-description-info li {
-        padding: 10px 0; }
-        .local-stores-content-section .local-stores-address-description-info li:last-child {
-          padding: 10px 0 0 0; }
-        .local-stores-content-section .local-stores-address-description-info li:first-child {
-          padding: 0 0 10px 0; }
-        .local-stores-content-section .local-stores-address-description-info li a {
+      .local-stores-content-section .local-stores-address-description-info {
+        padding: 15px 0 60px 0; }
+        .local-stores-content-section .local-stores-address-description-info li {
           font-size: 14px;
           color: #8e8c8c;
-          font-weight: 300;
-          text-decoration: none;
-          -webkit-transition: 0.3s color linear;
-          transition: 0.3s color linear; }
-          .local-stores-content-section .local-stores-address-description-info li a:hover {
-            color: #00c8c8; }
-          .local-stores-content-section .local-stores-address-description-info li a:before {
-            margin-right: 10px; }
+          font-weight: 300; }
+          .local-stores-content-section .local-stores-address-description-info li:not(:last-child) {
+            padding: 0 0 20px; }
+          .local-stores-content-section .local-stores-address-description-info li a {
+            font-size: 14px;
+            color: #8e8c8c;
+            font-weight: 300;
+            text-decoration: none;
+            -webkit-transition: 0.3s color linear;
+            transition: 0.3s color linear;
+            padding-left: 5px; }
+            .local-stores-content-section .local-stores-address-description-info li a:hover {
+              color: #00c8c8; }
+            .local-stores-content-section .local-stores-address-description-info li a:before {
+              margin-right: 10px; }
       .local-stores-content-section .local-stores-address-description-soc-icons {
-        padding: 60px 0 0 0; }
+        padding: 0; }
         .local-stores-content-section .local-stores-address-description-soc-icons li {
           padding: 0 15px 0 0; }
           .local-stores-content-section .local-stores-address-description-soc-icons li a {
@@ -9991,7 +10001,6 @@ html {
             -webkit-transition: color 0.3s linear, background-color 0.3s linear;
             transition: color 0.3s linear, background-color 0.3s linear; }
             .local-stores-content-section .local-stores-address-description-soc-icons li a:hover {
-              background-color: transparent;
               color: #00c8c8; }
 
 .log-form-section {
@@ -10018,11 +10027,17 @@ html {
       font-size: 15px;
       font-family: 'roboto'; }
     .log-form-section .sign-form-block-check {
-      width: 20px;
-      height: 20px;
-      border: 1px solid #e7e7e7;
-      margin-right: 10px;
-      margin-bottom: 0; }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .log-form-section .sign-form-block-check::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #e7e7e7;
+        margin-right: 10px;
+        margin-bottom: 0; }
     .log-form-section .sign-form-block-user-item {
       padding-bottom: 30px; }
   .log-form-section .reg-form-block-bottom span {
@@ -10036,7 +10051,11 @@ html {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    font-weight: 400; }
+    font-weight: 400;
+    -webkit-transition: color 0.3s linear;
+    transition: color 0.3s linear; }
+    .brand-section-content-breadcrumb li a:hover {
+      color: #00c8c8; }
 
 .product-viev-section {
   padding: 60px 0 0px 0; }
@@ -10105,7 +10124,11 @@ html {
         padding-left: 10px; }
       .product-viev-section .product-viev-description-stars-block i {
         color: #ded3aa;
-        width: 7%; }
+        width: 7%;
+        -webkit-transition: color linear 0.3s;
+        transition: color linear 0.3s; }
+        .product-viev-section .product-viev-description-stars-block i:hover {
+          color: #ff0000; }
     .product-viev-section .product-viev-description-soc span {
       padding-right: 5px; }
     .product-viev-section .product-viev-description-soc a {
@@ -10143,9 +10166,10 @@ html {
         font-size: 15px;
         -webkit-transition: 0.3s color linear;
         transition: 0.3s color linear;
-        text-decoration: none; }
+        text-decoration: none;
+        color: #00c8c8; }
         .product-viev-section .product-viev-description-status-block ul li a:hover {
-          color: #00c8c8; }
+          color: #ff0000; }
     .product-viev-section .product-viev-description-text p {
       font-size: 15px;
       color: #8e8c8c; }
@@ -10445,7 +10469,7 @@ input[type="checkbox"] {
   display: none;
   cursor: pointer; }
 
-input[type="checkbox"]:checked + .sign-form-block-check {
+input[type="checkbox"]:checked + .sign-form-block-check:before {
   background-color: #33d3d3;
   border-color: #33d3d3; }
 

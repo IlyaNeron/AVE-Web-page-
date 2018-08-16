@@ -45,8 +45,11 @@
 
         & li {
 
+          &:not(:first-child) {
+          padding: 0 15px;
+        }
+
           & a {
-            padding: 0 15px;
             color: #999;
             text-decoration: none;
             transition: color 0.3s linear;

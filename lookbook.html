@@ -224,10 +224,17 @@
       </div>
       </header>
       <main class="main">
-        <section class="banner-section" style="background-image: url('assets/img/main-section-image.png');">
-          <div class="container container-lg">
-            <h1>A V E</h1>
-            <button type="button" class="btn btn-outline-primary">shop men's collection</button>
+        <section class="brand-section" style="background-image: url('assets/img/brand-back-image.png');">
+          <div class="brand-section-overlay">
+            <div class="container container-lg d-flex justify-content-center">
+              <div class="brand-section-content text-center">
+                <h1><span>our</span> lookbook</h1>
+                <ol class="breadcrumb brand-section-content-breadcrumb justify-content-center">
+                  <li class="breadcrumb-item"><a href="#">latest posts -</a></li>
+                  <li class="breadcrumb-item"><a href="#">mens & womens</a></li>
+                </ol>
+              </div>
+            </div>
           </div>
         </section>
         <section class="tabs-section">
@@ -235,23 +242,23 @@
             <div class="tabs-catalog">
               <ul class="nav nav-pills mb-3 tabs-catalog-items" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="pills-home-tab_1" data-toggle="pill" href="#pills-popular" role="tab" aria-controls="pills-home" aria-selected="true">latest</a>
+                  <a class="nav-link active" id="pills-home-tab_1" data-toggle="pill" href="#pills-popular" role="tab"  aria-selected="true">latest</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-profile-tab_2" data-toggle="pill" href="#pills-arrivals" role="tab" aria-controls="pills-profile" aria-selected="false">most liked</a>
+                  <a class="nav-link" id="pills-profile-tab_2" data-toggle="pill" href="#pills-arrivals" role="tab"  aria-selected="false">most liked</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-contact-tab_3" data-toggle="pill" href="#pills-sellers" role="tab" aria-controls="pills-contact" aria-selected="false">best sellers</a>
+                  <a class="nav-link" id="pills-contact-tab_3" data-toggle="pill" href="#pills-sellers" role="tab"  aria-selected="false">best sellers</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-contact-tab_4" data-toggle="pill" href="#pills-offers" role="tab" aria-controls="pills-contact" aria-selected="false">price low to high</a>
+                  <a class="nav-link" id="pills-contact-tab_4" data-toggle="pill" href="#pills-offers" role="tab"  aria-selected="false">price low to high</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-contact-tab_5" data-toggle="pill" href="#pills-soon" role="tab" aria-controls="pills-contact" aria-selected="false">price high to low</a>
+                  <a class="nav-link" id="pills-contact-tab_5" data-toggle="pill" href="#pills-soon" role="tab"  aria-selected="false">price high to low</a>
                 </li>
               </ul>
               <div class="tab-content tabs-catalog-content lookbook-catalog-content" id="pills-tabContent">
-                <div class="tab-pane fade show active flex-wrap" id="pills-popular" role="tabpanel" aria-labelledby="pills-home-tab_1">
+                <div class="tab-pane fade show active flex-wrap" id="pills-popular" role="tabpanel">
                   <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6 row m-0 p-0">
                     <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="tabs-catalog-content-block-1-item">
@@ -369,7 +376,7 @@
                       </div>
                   </div>
                   <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
-                    <div class="tabs-catalog-content-block-1-item"">
+                    <div class="tabs-catalog-content-block-1-item">
                       <div class="tabs-catalog-content-block-1-item-price">
                          <span class=""><sup>&pound;</sup>29.95</span>
                       </div>
@@ -425,7 +432,7 @@
                       <h3 class="font-weight-bold">win <span class="font-weight-light">a new look!</span></h3>
                       <div class="lookbook-catalog-content-block-1-item-description-wrapper lookbook-catalog-content-block-2-item-description-wrapper">
                         <span class="lookbook-catalog-content-block-1-item-description-text">add looks or items to your lookbook for a chance of winning </span>
-                        <p>See an item or a complete look you like, click the  button to add it to your 
+                        <p>See an item or a complete look you like, click the button to add it to your 
                            lookbook and you’ll be automatically entered to our monthly draw where 
                            one winner gets a &pound;300 gift voucher to spend on our website!</p>
                         <p>
@@ -464,10 +471,10 @@
                   </div>
               </div>
                 </div>
-                <div class="tab-pane fade" id="pills-arrivals" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-                <div class="tab-pane fade" id="pills-sellers" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-                <div class="tab-pane fade" id="pills-offers" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-                <div class="tab-pane fade" id="pills-soon" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                <div class="tab-pane fade" id="pills-arrivals" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="pills-sellers" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="pills-offers" role="tabpanel">...</div>
+                <div class="tab-pane fade" id="pills-soon" role="tabpanel">...</div>
               </div>
             </div>
           </div>
@@ -628,14 +635,14 @@
             <div class="footer-lists-item">
                 <h3>contact details</h3>
                 <ul class="m-0 p-0">
-                  <li><p class="m-0">Head Office: Avenue Fashion.</p>
-                    <p>180-182 Regent Street, London.</p>
+                  <li><address class="m-0">Head Office: Avenue Fashion.
+                     <span class="d-block">180-182 Regent Street, London.</span></address>
                   </li>
-                  <li>
-                    <a href="tel:+0123456789">Telephone: 0123-456-789</a>
+                  <li>Telephone: 
+                    <a href="tel:+0123456789">0123-456-789</a>
                   </li>
-                  <li>
-                    <a href="mailto:support@youwebsite.com">Email: support@youwebsite.com</a>
+                  <li>Email:
+                    <a href="mailto:support@youwebsite.com">support@youwebsite.com</a>
                   </li>
               </ul>
             </div>
