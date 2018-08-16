@@ -144,12 +144,15 @@ select {
 }
 
 .tab-content {
+
   > .tab-pane {
     display: none;
   }
+
   > .active {
     display: flex;
   }
+
 }
 
 
@@ -178,35 +181,37 @@ select {
   &-caption_2 {
     font-weight: 300;
   }
+
 }
 
 
 .form-control:focus {
-  background-color: #fcf6f7;
-  border-color: #bb5465;
+  background-color: #f8f8f8;
+  border-color: #00c8c8;
 }
 
 .price-block {
-            position: absolute;
-            left: 0;
-            top: 0;
-            padding: 15px;
-            z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  z-index: 1;
 
-            & span {
-            padding-left: 9px;
-            font-size: 21px;
-            color :#9a9a9a;
-            position: relative;
-            font-weight: 300;
+    & span {
+    padding-left: 9px;
+    font-size: 21px;
+    color :#9a9a9a;
+    position: relative;
+    font-weight: 300;
 
-            & sup {
-              font-size: 14px;
-              padding-right: 3px;
-            }
+      & sup {
+      font-size: 14px;
+      padding-right: 3px;
+      }
 
-          }
-        }
+  }
+
+}
 
         .active-link {
           color: #00c8c8 !important;
@@ -214,10 +219,12 @@ select {
 
 .product-page-tabs-section {
         .nav-link.active,
+
   .show > .tab-link {
     color: #fff !important;
     background-color: #333 !important;
   }
+
 }
 
 

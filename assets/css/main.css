@@ -9526,9 +9526,10 @@ html {
   .btn-outline-primary:hover {
     background: #00c8c8;
     border-color: #00c8c8; }
-  .btn-outline-primary:active {
-    background-color: #00c8c8 !important;
-    border-color: #00c8c8 !important; }
+
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: #00c8c8;
+  border-color: #00c8c8; }
 
 .btn-outline-dark {
   color: #454647;
@@ -9536,12 +9537,14 @@ html {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px; }
-  .btn-outline-dark:hover {
-    background: #333;
-    border-color: #333; }
-  .btn-outline-dark:active {
-    background-color: #333 !important;
-    border-color: #333 !important; }
+
+.btn-outline-dark:not(:disabled):not(.disabled):active:hover {
+  background: #333;
+  border-color: #333; }
+
+.btn-outline-dark:not(:disabled):not(.disabled):active:active {
+  background-color: #333;
+  border-color: #333; }
 
 .banner-section {
   background-size: cover;
@@ -10477,8 +10480,8 @@ select {
     font-weight: 300; }
 
 .form-control:focus {
-  background-color: #fcf6f7;
-  border-color: #bb5465; }
+  background-color: #f8f8f8;
+  border-color: #00c8c8; }
 
 .price-block {
   position: absolute;
