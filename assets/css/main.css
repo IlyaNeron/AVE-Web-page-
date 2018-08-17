@@ -9463,12 +9463,12 @@ html {
       color: #858585; }
     .footer-cop ul {
       list-style: none; }
-      .footer-cop ul li {
+      .footer-cop ul li:not(:first-child) {
         padding: 0 0 0 30px; }
-        .footer-cop ul li span {
-          color: #858585; }
-        .footer-cop ul li a {
-          color: #858585; }
+      .footer-cop ul li span {
+        color: #858585; }
+      .footer-cop ul li a {
+        color: #858585; }
 
 @media (max-width: 1020px) {
   .footer-bottom-social {

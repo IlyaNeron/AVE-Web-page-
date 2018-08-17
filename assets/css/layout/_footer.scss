@@ -97,7 +97,10 @@
         list-style: none;
 
         & li {
-          padding: 0 0 0 30px;
+
+          &:not(:first-child) {
+            padding: 0 0 0 30px;
+          }
 
           & span {
             color: #858585;
