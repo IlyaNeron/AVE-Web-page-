@@ -9459,15 +9459,15 @@ html {
   .footer-cop {
     padding: 15px 0;
     background: #333; }
-    .footer-cop-left span {
+    .footer-cop span {
       color: #858585; }
-    .footer-cop-dev ul {
+    .footer-cop ul {
       list-style: none; }
-      .footer-cop-dev ul li {
+      .footer-cop ul li {
         padding: 0 0 0 30px; }
-        .footer-cop-dev ul li span {
+        .footer-cop ul li span {
           color: #858585; }
-        .footer-cop-dev ul li a {
+        .footer-cop ul li a {
           color: #858585; }
 
 @media (max-width: 1020px) {
@@ -9475,40 +9475,35 @@ html {
     padding: 87px 15px; } }
 
 @media (max-width: 767px) {
-  .footer-cop-left {
+  .footer-cop .footer-cop-left {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .footer-cop-dev {
+  .footer-cop .footer-cop-dev {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .footer-cop-dev ul {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .footer-cop-dev ul li:first-child {
-        padding: 0; } }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer-cop .footer-cop-dev li {
+      padding: 0; } }
 
 @media (max-width: 420px) {
   .footer-cop-dev {
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    .footer-cop-dev ul {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .footer-cop-dev ul li {
-        text-align: center;
-        padding: 0; }
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .footer-cop-dev li {
+      text-align: center;
+      padding: 0; }
   .footer-bottom-social ul li {
     padding: 0 10px; } }
 
@@ -9920,7 +9915,7 @@ html {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 15px 0; }
+    padding: 0 0 15px 0; }
     .local-stores-content-section .local-stores-blocks-item h3 {
       font-size: 18px;
       text-transform: uppercase;

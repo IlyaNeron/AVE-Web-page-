@@ -88,12 +88,10 @@
   &-cop {
     padding: 15px 0;
     background: #333;
-    &-left {
+
       & span {
         color: #858585;
       }
-    }
-    &-dev {
 
       & ul {
         list-style: none;
@@ -105,10 +103,9 @@
             color: #858585;
 
           }
+
           & a {
             color: #858585;
-
-          }
 
         }
 
@@ -131,6 +128,8 @@
 
 @media (max-width: 767px) {
 
+  .footer-cop {
+
   .footer-cop-left {
     width: 100%;
     justify-content: center;
@@ -138,12 +137,9 @@
 
   .footer-cop-dev {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
 
-    & ul {
-      justify-content: space-between;
-
-      & li:first-child {
+      & li {
         padding:0;
       }
 
@@ -158,17 +154,14 @@
   .footer-cop-dev {
     width: 100%;
     justify-content: center;
-
-    & ul {
-      justify-content: space-between;
-      flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
 
       & li {
         text-align: center;
         padding: 0;
       }
 
-    }
 
   }
 
