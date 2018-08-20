@@ -12,7 +12,17 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header-bar">
+        <nav class="navbar navbar-expand-lg">
+          <div class="logo d-lg-none">
+            <a href="index.html" class="d-block">
+              <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-menu"></span>
+          </button>
+      <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
+        <div class="header-bar w-100">
           <div class="container">
             <div class="header-top d-flex justify-content-between">
               <div class="header-valuet-block icon-down-open-mini">
@@ -45,9 +55,9 @@
             </div>
           </div>
         </div>
-        <div class="header-bottom">
+        <div class="header-bottom w-100">
           <div class="container container-lg d-flex justify-content-between align-items-start">
-            <div class="logo">
+            <div class="logo d-md-none d-lg-block">
               <a href="index.html" class="d-block">
               <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
               </a>
@@ -221,6 +231,8 @@
             </div>
           </div>
         </div>
+      </div>
+    </nav>
       </header>
       <main class="main">
         <section class="banner-section" style="background-image: url('assets/img/main-section-image.png');">

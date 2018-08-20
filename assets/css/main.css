@@ -3516,7 +3516,7 @@ input[type="button"].btn-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 0 0; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: -webkit-box;
@@ -3535,7 +3535,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -3577,7 +3577,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 32px;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -9215,8 +9215,8 @@ html {
 /* Base Styles -------------------- */
 @font-face {
   font-family: 'fontello';
-  src: url("fonts/fontello.eot?25952455");
-  src: url("fonts/fontello.eot?25952455#iefix") format("embedded-opentype"), url("fonts/fontello.woff2?25952455") format("woff2"), url("fonts/fontello.woff?25952455") format("woff"), url("fonts/fontello.ttf?25952455") format("truetype"), url("fonts/fontello.svg?25952455#fontello") format("svg");
+  src: url("fonts/fontello.eot?47230113");
+  src: url("fonts/fontello.eot?47230113#iefix") format("embedded-opentype"), url("fonts/fontello.woff2?47230113") format("woff2"), url("fonts/fontello.woff?47230113") format("woff"), url("fonts/fontello.ttf?47230113") format("truetype"), url("fonts/fontello.svg?47230113#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -9401,7 +9401,7 @@ html {
         -ms-flex-direction: column;
             flex-direction: column; }
 
-@media (max-width: 1140px) {
+@media (max-width: 1180px) {
   .header-bottom-nav-menu-item {
     padding: 0 15px; } }
 
@@ -10454,6 +10454,10 @@ body {
   content: '\f2a3'; }
 
 /* '' */
+.icon-menu:before {
+  content: '\f0c9'; }
+
+/* '' */
 select {
   cursor: pointer; }
 
