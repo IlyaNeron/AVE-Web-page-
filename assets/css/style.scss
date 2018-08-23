@@ -146,7 +146,13 @@ input[type="checkbox"]:checked + .sign-form-block-check:before {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+
+   &::-ms-expand {
+       display: none;
+   }
+   
 }
 
 .tab-content {
@@ -217,6 +223,10 @@ select {
 
   }
 
+}
+
+.content-block-item-description {
+  width:100%;
 }
 
         .active-link {

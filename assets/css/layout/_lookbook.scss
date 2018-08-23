@@ -99,3 +99,58 @@
   }
 
 }
+
+@media (max-width: 1200px) {
+
+  .lookbook-catalog-content-block-2-item-image {
+    padding-bottom: 60%;
+
+    & img {
+      width: 50%;
+    }
+
+  }
+
+  .lookbook-catalog-content-block-1-item-wrapper {
+    padding: 15px 0;
+  }
+
+  .lookbook-catalog-content-block-2-item-description-wrapper h2 {
+    display: none;
+  }
+
+  .lookbook-catalog-content-block-2-item-description-wrapper {
+    padding-right: 0;
+  }
+
+  .lookbook-catalog-content-block-1-item-description-wrapper {
+    padding-right: 0;
+  }
+
+}
+
+@media (max-width: 820px) {
+
+  .lookbook-catalog-content-block-2-item-image {
+    padding-bottom: 100%;
+
+    & img {
+      width: 80%;
+    }
+
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .lookbook-catalog-content-block-2-item-image {
+    padding-bottom: 150%;
+
+    & img {
+      width: 100%;
+    }
+
+  }
+
+}
