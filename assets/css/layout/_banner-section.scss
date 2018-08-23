@@ -20,12 +20,12 @@
     
 }
 
-@media (max-width:1540px) {
+@media (max-width:1560px) {
 
   .banner-section {
 
     h1 {
-      font-size: 400px;
+      font-size: 300px;
     }
 
   }
@@ -35,10 +35,6 @@
 @media (max-width:1405px) {
 
   .banner-section {
-
-    h1 {
-      font-size: 350px;
-    }
 
     button {
       margin-right: 200px;
@@ -52,10 +48,6 @@
 
   .banner-section {
 
-    h1 {
-      font-size: 300px;
-    }
-
     button {
       margin-right: 150px;
     }
@@ -64,12 +56,12 @@
 
 }
 
-@media (max-width:1130px) {
+@media (max-width:1147px) {
 
   .banner-section {
 
     h1 {
-      font-size: 250px;
+      font-size: 150px;
     }
 
     button {
@@ -81,15 +73,69 @@
 }
 
 @media (max-width: 2050px) {
+
   .banner-section {
     background-position: 50% 50%;
   }
+
 }
 
 @media (max-width:1140px) {
 
   .banner-section {
     background-position: 35% 50%;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .banner-section {
+    margin-top: -120px;
+    background-position: 15% 50%;
+  }
+
+}
+
+
+@media (max-width: 735px) {
+
+  .banner-section {
+    & h1 {
+      font-size: 100px;
+      letter-spacing: 45px;
+    }
+
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  .banner-section {
+    & h1 {
+      font-size: 70px;
+      letter-spacing: 25px;
+    }
+
+    & button {
+      font-size: 12px;
+      margin-right: 0px;
+      padding: 13.5px 30px;
+    }
+
+  }
+
+}
+
+@media (max-width: 365px) {
+
+  .banner-section {
+    & h1 {
+      font-size: 60px;
+      letter-spacing: 15px;
+    }
+
   }
 
 }

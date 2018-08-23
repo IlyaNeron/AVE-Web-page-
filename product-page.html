@@ -13,9 +13,9 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header-bar">
+        <div class="header-bar w-100">
           <div class="container">
-            <div class="header-top d-flex justify-content-between">
+            <div class="header-top d-flex justify-content-between align-items-center">
               <div class="header-valuet-block icon-down-open-mini">
                 <span>Currency :</span>
                 <select class="header-valuet-block-select">
@@ -30,7 +30,7 @@
                       <a href="#">Register</a>
                     </li>
                     <li>
-                      <a href="#">Sign In</a>
+                      <a href="sign-up.html">Sign In</a>
                     </li>
                   </ul>
                 </div>
@@ -46,13 +46,19 @@
             </div>
           </div>
         </div>
-        <div class="header-bottom">
-          <div class="container container-lg d-flex justify-content-between align-items-start">
-            <div class="logo">
+        <div class="header-bottom w-100">
+          <div class="container container-lg d-flex justify-content-between align-items-center flex-wrap">
+            <div class="logo d-lg-block">
               <a href="index.html" class="d-block">
-              <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
+                <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
               </a>
             </div>
+            <button class="navbar-toggler d-lg-none burger-menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <div class="header-bottom-nav-menu d-flex">
               <ul class="nav nav-pills">
                 <li class="nav-item header-bottom-nav-menu-item">
@@ -158,10 +164,10 @@
                   </div>
                 </li>
                 <li class="nav-item header-bottom-nav-menu-item">
-                  <a href="#" class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link header-bottom-nav-menu-item-main-link-static">the brand</a>
+                  <a href="brand.html" class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link header-bottom-nav-menu-item-main-link-static">the brand</a>
                 </li>
                 <li class="nav-item header-bottom-nav-menu-item">
-                  <a href="#" class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link header-bottom-nav-menu-item-main-link-static">local stores</a>
+                  <a href="local-stores.html" class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link header-bottom-nav-menu-item-main-link-static">local stores</a>
                 </li>
                 <li class="nav-item header-bottom-nav-menu-item">
                   <a class="nav-link dropdown-toggle header-bottom-nav-menu-item-main-link icon-down-open-mini" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">local book</a>
@@ -171,7 +177,7 @@
                         <h3>casual</h3>
                         <ul>
                           <li>
-                            <a href="#">Jackets</a>
+                            <a href="lookbook.html">Jackets</a>
                           </li>
                           <li>
                             <a href="#">Hoodies & Sweatshirts</a>
@@ -242,7 +248,7 @@
         <section class="product-viev-section">
           <div class="container">
             <div class="product-viev-blocks row">
-              <div class="product-viev-carousel col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="product-viev-carousel col-12 col-sm-12 col-md-12 col-lg-6">
                 <div id="carouselExampleIndicators" class="carousel slide">
                   <a class="carousel-control-prev product-viev-carousel-control icon-left-open" href="#carouselExampleIndicators" role="button" data-slide="prev"></a>
                   <a class="carousel-control-next product-viev-carousel-control icon-right-open" href="#carouselExampleIndicators" role="button" data-slide="next"></a>
@@ -265,9 +271,9 @@
                   </div>
                 </div>
               </div>
-              <div class="product-viev-description col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="product-viev-description col-12 col-sm-12 col-md-12 col-lg-6">
                 <h3>ave classic sweatshirts</h3>
-                <ul class="m-0 d-flex product-viev-description-head">
+                <ul class="m-0 d-flex product-viev-description-head flex-wrap">
                   <li class="product-viev-description-stars-block">
                     <a href="#"><i class="fas fa-star"></i></a>
                     <a href="#"><i class="fas fa-star"></i></a>
@@ -322,7 +328,7 @@
                   </ul>
                 </div>
                 <div class="product-viev-description-select d-flex">
-                  <form class="form-group m-0 product-viev-description-select-block">
+                  <form class="form-group product-viev-description-select-block">
                     <label for="select_1">colour</label>
                     <select id="select_1" class="form-control">
                       <option>Select Colour</option>
@@ -330,7 +336,7 @@
                       <option>Select Colour</option>
                     </select>
                   </form>
-                  <form class="form-group m-0 product-viev-description-select-block">
+                  <form class="form-group product-viev-description-select-block">
                     <label for="select_2">size</label>
                     <select id="select_2" class="form-control">
                       <option>Select Size</option>
@@ -338,7 +344,7 @@
                       <option>Select Colour</option>
                     </select>
                   </form>
-                  <form class="form-group m-0 product-viev-description-select-block">
+                  <form class="form-group product-viev-description-select-block">
                     <label for="select_3">colour</label>
                     <select id="select_3" class="form-control">
                       <option>1</option>
@@ -408,134 +414,136 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container">
-          <div class="footer-lists d-flex justify-content-between flex-wrap row">
-            <div class="footer-lists-item">
-              <h3>information</h3>
-              <ul class="m-0 p-0">
-                <li>
-                  <a href="#">The brand</a>
-                </li>
-                <li>
-                  <a href="#">Local stores</a>
-                </li>
-                <li>
-                  <a href="#">Custumer service</a>
-                </li>
-                <li>
-                  <a href="#">Privacy & cookies</a>
-                </li>
-                <li>
-                  <a href="#">Site map</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-lists-item">
-              <h3>why buy from us</h3>
-              <ul class="m-0 p-0">
-                <li>
-                  <a href="#">Shipping & returns</a>
-                </li>
-                <li>
-                  <a href="#">Secure shoping</a>
-                </li>
-                <li>
-                  <a href="#">Testimonials</a>
-                </li>
-                <li>
-                  <a href="#">Award winning</a>
-                </li>
-                <li>
-                  <a href="#">Ethical trading</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-lists-item">
-              <h3>your account</h3>
-              <ul class="m-0 p-0">
-                <li>
-                  <a href="#">Sign in</a>
-                </li>
-                <li>
-                  <a href="#">Register</a>
-                </li>
-                <li>
-                  <a href="#">View cart</a>
-                </li>
-                <li>
-                  <a href="#">Viev your lookbook</a>
-                </li>
-                <li>
-                  <a href="#">Track an order</a>
-                </li>
-                <li>
-                  <a href="#">Update information</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-lists-item">
-              <h3>lockbook</h3>
-              <ul class="m-0 p-0">
-                <li>
-                  <a href="#">Latest posts</a>
-                </li>
-                <li>
-                  <a href="#">Men's lookbook</a>
-                </li>
-                <li>
-                  <a href="#">Women's lookbook</a>
-                </li>
-                <li>
-                  <a href="#">Lookbooks RSS feed</a>
-                </li>
-                <li>
-                  <a href="#">View your lookbook</a>
-                </li>
-                <li>
-                  <a href="#">Delete your lookbook</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-lists-item">
-              <h3>contact details</h3>
-              <ul class="m-0 p-0">
-                <li>
-                  <address class="m-0">Head Office: Avenue Fashion.
-                    <span class="d-block">180-182 Regent Street, London.</span>
-                  </address>
-                </li>
-                <li>Telephone: 
-                  <a href="tel:+0123456789">0123-456-789</a>
-                </li>
-                <li>Email:
-                  <a href="mailto:support@youwebsite.com">support@youwebsite.com</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-bottom d-flex justify-content-between row">
-            <div class="footer-bottom-block col-12 col-sm-12 col-md-12 col-lg-6">
-              <div class="banner-block text-center">
-                <span class="banner-block-caption_1">award winner</span>
-                <span class="banner-block-caption_2">fashion awards 2016</span>
-              </div>
-            </div>
-            <div class="footer-bottom-block align-items-center justify-content-center d-flex col-12 col-sm-12 col-md-12 col-lg-6">
-              <div class="footer-bottom-social d-flex align-items-center justify-content-center">
-                <ul class="m-0 p-0 d-flex">
+        <div class="footer-nav">
+          <div class="container">
+            <div class="footer-lists d-flex justify-content-between flex-wrap row">
+              <div class="footer-lists-item">
+                <h3>information</h3>
+                <ul class="m-0 p-0">
                   <li>
-                    <a href="#" class="icon-facebook"></a>
+                    <a href="#">The brand</a>
                   </li>
                   <li>
-                    <a href="#" class="icon-twitter"></a>
+                    <a href="#">Local stores</a>
                   </li>
                   <li>
-                    <a href="#" class="icon-instagram"></a>
+                    <a href="#">Custumer service</a>
                   </li>
                   <li>
-                    <a href="#" class="icon-pinterest-circled"></a>
+                    <a href="#">Privacy & cookies</a>
+                  </li>
+                  <li>
+                    <a href="#">Site map</a>
                   </li>
                 </ul>
+              </div>
+              <div class="footer-lists-item">
+                <h3>why buy from us</h3>
+                <ul class="m-0 p-0">
+                  <li>
+                    <a href="#">Shipping & returns</a>
+                  </li>
+                  <li>
+                    <a href="#">Secure shoping</a>
+                  </li>
+                  <li>
+                    <a href="#">Testimonials</a>
+                  </li>
+                  <li>
+                    <a href="#">Award winning</a>
+                  </li>
+                  <li>
+                    <a href="#">Ethical trading</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-lists-item">
+                <h3>your account</h3>
+                <ul class="m-0 p-0">
+                  <li>
+                    <a href="#">Sign in</a>
+                  </li>
+                  <li>
+                    <a href="#">Register</a>
+                  </li>
+                  <li>
+                    <a href="#">View cart</a>
+                  </li>
+                  <li>
+                    <a href="#">Viev your lookbook</a>
+                  </li>
+                  <li>
+                    <a href="#">Track an order</a>
+                  </li>
+                  <li>
+                    <a href="#">Update information</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-lists-item">
+                <h3>lockbook</h3>
+                <ul class="m-0 p-0">
+                  <li>
+                    <a href="#">Latest posts</a>
+                  </li>
+                  <li>
+                    <a href="#">Men's lookbook</a>
+                  </li>
+                  <li>
+                    <a href="#">Women's lookbook</a>
+                  </li>
+                  <li>
+                    <a href="#">Lookbooks RSS feed</a>
+                  </li>
+                  <li>
+                    <a href="#">View your lookbook</a>
+                  </li>
+                  <li>
+                    <a href="#">Delete your lookbook</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-lists-item footer-lists-item-contact">
+                <h3>contact details</h3>
+                <ul class="m-0 p-0">
+                  <li>
+                    <address class="m-0">Head Office: Avenue Fashion.
+                      <span class="d-block">180-182 Regent Street, London.</span>
+                    </address>
+                  </li>
+                  <li>Telephone: 
+                    <a href="tel:+0123456789">0123-456-789</a>
+                  </li>
+                  <li>Email:
+                    <a href="mailto:support@youwebsite.com">support@youwebsite.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom d-flex justify-content-between row">
+              <div class="footer-bottom-block col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="banner-block text-center">
+                  <span class="banner-block-caption_1">award winner</span>
+                  <span class="banner-block-caption_2">fashion awards 2016</span>
+                </div>
+              </div>
+              <div class="footer-bottom-block align-items-center justify-content-center d-flex col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="footer-bottom-social d-flex align-items-center justify-content-center">
+                  <ul class="m-0 p-0 d-flex">
+                    <li>
+                      <a href="#" class="icon-facebook"></a>
+                    </li>
+                    <li>
+                      <a href="#" class="icon-twitter"></a>
+                    </li>
+                    <li>
+                      <a href="#" class="icon-instagram"></a>
+                    </li>
+                    <li>
+                      <a href="#" class="icon-pinterest-circled"></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

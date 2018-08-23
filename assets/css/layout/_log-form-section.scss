@@ -76,3 +76,34 @@
   }
 
 }
+
+@media (max-width: 400px) {
+
+  .sign-form-block-bottom {
+    flex-wrap: wrap;
+
+    & button {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    & a {
+      width: 100%;
+      text-align: right;
+    }
+
+  }
+
+  .log-form-section {
+
+    .reg-form-block-bottom {
+
+      span {
+        padding: 0;
+      }
+      
+    }
+
+  }
+
+}

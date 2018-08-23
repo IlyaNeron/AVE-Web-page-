@@ -12,19 +12,9 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <nav class="navbar navbar-expand-lg">
-          <div class="logo d-lg-none">
-            <a href="index.html" class="d-block">
-              <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
-            </a>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-menu"></span>
-          </button>
-      <div class="collapse navbar-collapse flex-column" id="navbarSupportedContent">
         <div class="header-bar w-100">
           <div class="container">
-            <div class="header-top d-flex justify-content-between">
+            <div class="header-top d-flex justify-content-between align-items-center">
               <div class="header-valuet-block icon-down-open-mini">
                 <span>Currency :</span>
                 <select class="header-valuet-block-select">
@@ -56,12 +46,18 @@
           </div>
         </div>
         <div class="header-bottom w-100">
-          <div class="container container-lg d-flex justify-content-between align-items-start">
-            <div class="logo d-md-none d-lg-block">
+          <div class="container container-lg d-flex justify-content-between align-items-center flex-wrap">
+            <div class="logo d-lg-block">
               <a href="index.html" class="d-block">
-              <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
+                <img src="assets/img/logo.png" width="240" height="35" alt="Avenue Fashion">
               </a>
             </div>
+            <button class="navbar-toggler d-lg-none burger-menu-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <div class="header-bottom-nav-menu d-flex">
               <ul class="nav nav-pills">
                 <li class="nav-item header-bottom-nav-menu-item">
@@ -231,8 +227,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </nav>
       </header>
       <main class="main">
         <section class="banner-section" style="background-image: url('assets/img/main-section-image.png');">
@@ -243,7 +237,7 @@
         </section>
         <section class="tabs-section">
           <h2 class="sr-only sr-only-focusable">Caption</h2>
-          <div class="container container-lg">
+          <div class="container container-lg p-0">
             <div class="tabs-catalog">
               <ul class="nav nav-pills mb-3 tabs-catalog-items" id="pills-tab" role="tablist">
                 <li class="nav-item">
@@ -265,7 +259,7 @@
               <div class="tab-content tabs-catalog-content" id="pills-tabContent">
                 <div class="tab-pane fade show active flex-wrap" id="pills-popular" role="tabpanel">
                   <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6 row m-0 p-0">
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_1">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>89.99</span>
@@ -316,7 +310,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_2">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>47.50</span>
@@ -472,7 +466,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_5">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -523,7 +517,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_6">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -576,9 +570,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="pills-arrivals" role="tabpanel">
+                <div class="tab-pane flex-wrap fade" id="pills-arrivals" role="tabpanel">
                   <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6 row m-0 p-0">
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_7">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>47.50</span>
@@ -629,7 +623,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_8">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -785,7 +779,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_11">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>89.99</span>
@@ -836,7 +830,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_12">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -889,9 +883,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="pills-sellers" role="tabpanel">
+                <div class="tab-pane flex-wrap fade" id="pills-sellers" role="tabpanel">
                   <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6 row m-0 p-0">
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_13">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>47.50</span>
@@ -942,7 +936,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_14">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -1098,7 +1092,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_17">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>89.99</span>
@@ -1149,7 +1143,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_18">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -1202,9 +1196,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="pills-offers" role="tabpanel">
+                <div class="tab-pane flex-wrap fade" id="pills-offers" role="tabpanel">
                   <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6 row m-0 p-0">
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_19">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>47.50</span>
@@ -1255,7 +1249,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_20">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -1411,7 +1405,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_23">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>89.99</span>
@@ -1462,7 +1456,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_24">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -1515,9 +1509,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="pills-soon" role="tabpanel">
+                <div class="tab-pane flex-wrap fade" id="pills-soon" role="tabpanel">
                   <div class="tabs-catalog-content-block-1 col-12 col-sm-12 col-md-6 col-lg-6 row m-0 p-0">
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_25">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>47.50</span>
@@ -1568,7 +1562,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_26">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -1724,7 +1718,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_29">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>89.99</span>
@@ -1775,7 +1769,7 @@
                         </ol>
                       </div>
                     </div>
-                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="tabs-catalog-content-block-1-item-wrapper col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
                       <div class="carousel slide tabs-catalog-content-block-1-item" id="carouselExampleIndicators_30">
                         <div class="tabs-catalog-content-block-1-item-price">
                           <span class=""><sup>&pound;</sup>29.95</span>
@@ -1835,8 +1829,8 @@
         <section class="content-section">
           <div class="row content-blocks m-0">
             <div class="content-block-wrapper col-12 col-sm-12 col-md-12 col-lg-4">
-              <div class="content-block">
-                <div class="content-block-item d-flex ">
+              <div class="content-block h-100">
+                <div class="content-block-item h-100 d-flex ">
                   <div class="content-block-item-image">
                     <img alt="Image description" width="420" height="500" src="assets/img/tabs-catalog-image_1.png">
                   </div>
@@ -1856,10 +1850,10 @@
               </div>
             </div>
             <div class="content-block-wrapper col-12 col-sm-12 col-md-12 col-lg-4">
-              <div class="content-block">
-                <div class="content-block-item d-flex">
+              <div class="content-block h-100">
+                <div class="content-block-item h-100 d-flex">
                   <div class="content-block-item-image">
-                    <img alt="Image description" width="420" height="500" src="assets/img/tabs-catalog-image_1.png">
+                    <img alt="Image description" width="420" height="500" src="assets/img/lookbook-catalog-image_2.png">
                   </div>
                   <div class="content-block-item-wrapper d-flex flex-column align-items-end ">
                     <div class="content-block-item-description text-right">
@@ -1876,10 +1870,10 @@
               </div>
             </div>
             <div class="content-block-wrapper col-12 col-sm-12 col-md-12 col-lg-4">
-              <div class="content-block">
-                <div class="content-block-item d-flex">
+              <div class="content-block h-100">
+                <div class="content-block-item h-100 d-flex">
                   <div class="content-block-item-image">
-                    <img alt="Image description" width="420" height="500" src="assets/img/tabs-catalog-image_1.png">
+                    <img alt="Image description" width="420" height="500" src="assets/img/tabs-catalog-image_2.png">
                   </div>
                   <div class="content-block-item-wrapper d-flex flex-column align-items-end ">
                     <div class="content-block-item-description text-right">
@@ -1988,7 +1982,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="footer-lists-item">
+              <div class="footer-lists-item footer-lists-item-contact">
                 <h3>contact details</h3>
                 <ul class="m-0 p-0">
                   <li>
