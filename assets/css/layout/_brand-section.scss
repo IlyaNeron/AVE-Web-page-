@@ -115,3 +115,15 @@
   }
 
 }
+
+@media (max-width: 767px) {
+
+  .brand-section-content-breadcrumb li {
+    padding: 0;
+  }
+
+  .breadcrumb-item + .breadcrumb-item {
+    padding: 0;
+  }
+
+}
